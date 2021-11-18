@@ -5,13 +5,13 @@ const app = express();
 const handlebars = require('express-handlebars');
 const Handlebars = require('handlebars')
 const path = require('path');
-const client = require('../Diamond-Imoveis/routes/client')
-const property = require('../Diamond-Imoveis/routes/property')
+const client = require('../app/routes/client')
+const property = require('../app/routes/property')
 const session = require('express-session');
 const flash = require('connect-flash');
 const passport = require('passport')
-const routes = require('../Diamond-Imoveis/routes');
-require('../Diamond-Imoveis/config/auth')(passport)
+const routes = require('../app/routes');
+require('../app/config/auth')(passport)
 
 const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access')
 
