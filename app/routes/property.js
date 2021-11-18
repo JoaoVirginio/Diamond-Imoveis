@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router()
 const { isClient } = require('../helpers/isclient');
 
-const Property = require('../models/propertyc')
+const Property = require('../models/property')
 
 router.get('/anunciar', isClient , (req, res) => {
 
