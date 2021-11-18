@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router()
-const { isClient } = require('../helpers/isclient');
+const { isClient } = require('../helpers/isclientc');
 
 const Property = require('../models/property')
 
