@@ -3,8 +3,8 @@ const Sequelize = require('sequelize');
 const bcrypt = require('bcryptjs')
 
 
-require('../models/client')
-const Client = require('../models/client')
+require('../models/clientc')
+const Client = require('../models/clientc')
 
 module.exports = function(passport) {
     passport.use(new localStrategy({usernameField: 'email', passwordField: 'password'}, (email, password, done) => {
