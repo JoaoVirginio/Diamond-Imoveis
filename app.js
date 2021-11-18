@@ -5,13 +5,13 @@ const app = express();
 const handlebars = require('express-handlebars');
 const Handlebars = require('handlebars')
 const path = require('path');
-const client = require('./routes/client')
-const property = require('./routes/property')
+const client = require('../routes/client')
+const property = require('../routes/property')
 const session = require('express-session');
 const flash = require('connect-flash');
 const passport = require('passport')
-const routes = require('./routes');
-require('./config/auth')(passport)
+const routes = require('../routes');
+require('../config/auth')(passport)
 
 const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access')
 
