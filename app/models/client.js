@@ -27,5 +27,5 @@ const Client = db.sequelize.define('customer_entities', {
 })
  
 
-//Client.sync({force: true})
+Client.sync({force: true})
 module.exports = Client;
