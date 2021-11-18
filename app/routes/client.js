@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 const passport = require('passport');
 
 
-const Client = require('../models/Client')
+const Client = require('../models/client')
 
 router.get('/login', (req, res) => {
     res.render("login", {erros: ''})
